@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Kit - Seu Nome</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  /* Reset */
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+  body { background:#0e0e0e; color:#fff; display:flex; justify-content:center; padding:20px; }
+  .container { max-width:600px; width:100%; }
+
+  /* Animação dos blocos */
+  .block { background:#1b1b1b; border-radius:15px; padding:20px; margin-bottom:20px; opacity:0; transform:translateY(30px); animation:fadeInUp 0.6s forwards; }
+  .block:nth-child(1){animation-delay:0.2s;}
+  .block:nth-child(2){animation-delay:0.4s;}
+  .block:nth-child(3){animation-delay:0.6s;}
+  .block:nth-child(4){animation-delay:0.8s;}
+  .block:nth-child(5){animation-delay:1s;}
+  .block:nth-child(6){animation-delay:1.2s;}
+  @keyframes fadeInUp { to {opacity:1; transform:translateY(0);} }
+
+  /* Header */
+  .header { text-align:center; }
+  .header img { width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:3px solid #ff7f50; }
+  .header h1 { font-size:2em; background:linear-gradient(90deg,#ff7f50,#ffb347); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .header p { margin-top:10px; color:#ccc; }
+
+  /* Redes sociais */
+  .links { text-align:center; }
+  .links a { display:inline-block; margin:5px; padding:10px 20px; background:linear-gradient(90deg,#ff7f50,#ffb347); color:#fff; text-decoration:none; border-radius:25px; font-weight:500; transition:0.3s; }
+  .links a:hover { transform:translateY(-2px); box-shadow:0 4px 15px rgba(255,127,80,0.4); }
+  .links i { margin-right:8px; }
+
+  /* Estatísticas */
+  .stats div { display:flex; align-items:center; margin-bottom:10px; font-size:1em; }
+  .stats i { color:#ff7f50; margin-right:10px; }
+
+  /* Trabalhos */
+  .work div { display:flex; align-items:center; margin-bottom:10px; background:#222; border-radius:10px; overflow:hidden; transition:0.3s; }
+  .work div:hover { transform:scale(1.02); box-shadow:0 4px 15px rgba(255,127,80,0.4); }
+  .work img { width:80px; height:50px; object-fit:cover; }
+  .work a { color:#fff; text-decoration:none; margin-left:15px; font-weight:500; }
+
+  /* Contato */
+  .contact a { color:#ff7f50; text-decoration:none; font-weight:500; }
+  .contact a:hover { text-decoration:underline; }
+  .contact form { display:flex; flex-direction:column; margin-top:10px; }
+  .contact input, .contact textarea { padding:10px; margin-bottom:10px; border-radius:8px; border:none; outline:none; }
+  .contact button { padding:10px; border:none; border-radius:8px; background:linear-gradient(90deg,#ff7f50,#ffb347); color:#fff; font-weight:500; cursor:pointer; transition:0.3s; }
+  .contact button:hover { opacity:0.9; }
+
+  h2 { margin-bottom:15px; color:#ff7f50; font-size:1.2em; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="block header">
+    <img src="sua-foto.jpg" alt="Foto do Streamer">
+    <h1>Seu Nome</h1>
+    <p>Streamer focado em completacionismo e conteúdo detalhado.</p>
+  </div>
+
+  <!-- Bio -->
+  <div class="block bio">
+    <p>Lives diárias, análises completas de jogos e conteúdo exclusivo para todas as plataformas.</p>
+  </div>
+
+  <!-- Redes sociais -->
+  <div class="block links">
+    <h2>Redes Sociais</h2>
+    <a href="https://twitch.tv/nylkam" target="_blank"><i class="fab fa-twitch"></i>Twitch</a>
+    <a href="https://youtube.com/c/nylkam" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
+    <a href="https://tiktok.com/@nylkam" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+    <a href="https://kick.com/nylkam" target="_blank"><i class="fas fa-bolt"></i>Kick</a>
+  </div>
+
+  <!-- Estatísticas -->
+  <div class="block stats">
+    <h2>Estatísticas</h2>
+    <div><i class="fas fa-users"></i>Seguidores: 50k</div>
+    <div><i class="fas fa-eye"></i>Média de Viewers: 2k</div>
+    <div><i class="fas fa-chart-line"></i>Engajamento: 7%</div>
+  </div>
+
+  <!-- Trabalhos -->
+  <div class="block work">
+    <h2>Conteúdos</h2>
+    <div><img src="miniatura1.jpg" alt="Game X"><a href="#">Review de Game X</a></div>
+    <div><img src="miniatura2.jpg" alt="Game Y"><a href="#">Gameplay Completo de Game Y</a></div>
+    <div><img src="miniatura3.jpg" alt="DLC Z"><a href="#">Análise de DLC Z</a></div>
+  </div>
+
+  <!-- Contato -->
+  <div class="block contact">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:contato@seudominio.com">contato@seudominio.com</a></p>
+    <form>
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="email" placeholder="Seu Email" required>
+      <textarea placeholder="Mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
